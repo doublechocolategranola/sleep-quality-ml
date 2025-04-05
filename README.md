@@ -43,6 +43,4 @@ I trained a logistic regression model to predict whether sleep was "good" or "po
 - `dashboard/` – Screenshots and PDF export of the final dashboard
 - `notes/summary.md` – Final writeup of feature interactions and model interpretation
 
----
-
 
