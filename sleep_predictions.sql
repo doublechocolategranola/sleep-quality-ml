@@ -17,6 +17,9 @@ SELECT
   predicted_sleep_quality,
   predicted_sleep_quality_probs
 FROM
-  ML.PREDICT(MODEL `sleep-efficiency-project.sleep_efficiency_data.sleep_quality_model`,
-    (SELECT * FROM `sleep-efficiency-project.sleep_efficiency_data.sleep_efficiency_cleaned`)
+  ML.PREDICT(
+    MODEL `sleep-efficiency-project.sleep_efficiency_data.sleep_quality_model`,
+    (
+      SELECT * 
+      FROM `sleep-efficiency-project.sleep_efficiency_data.sleep_efficiency_cleaned`)
   )
