@@ -21,5 +21,6 @@ FROM
     MODEL `sleep-efficiency-project.sleep_efficiency_data.sleep_quality_model`,
     (
       SELECT * 
-      FROM `sleep-efficiency-project.sleep_efficiency_data.sleep_efficiency_cleaned`)
+      FROM `sleep-efficiency-project.sleep_efficiency_data.sleep_efficiency_cleaned`
+    )
   )
